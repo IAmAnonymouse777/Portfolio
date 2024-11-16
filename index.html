@@ -1,0 +1,801 @@
+
+<!-- OVERALL INFORMATION OF PROJECT -->
+<!-- My portfolio website is a simple and well-designed platform that highlights my skills, projects, and ways to contact me. 
+    The Hero Section grabs attention with a clean design, bold text, and a professional introduction. The About Section shares a bit about me and my work in a clear and engaging way. 
+    The Skills Section lists my technical abilities in an easy-to-read format. 
+    The Projects Section displays my work with attractive cards or grids, including descriptions and links. 
+    The Contact Section makes it easy to get in touch, with a form and direct links. 
+    The website is responsive, adjusting to different screen sizes, and includes smooth animations and effects to make it user-friendly and visually appealing.
+
+
+
+
+
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<!-- Body Start -->
+<body>
+    <!-- Header Start -->
+    <!-- Header (Navbar)
+    Styling:
+    The navbar is fixed to the top with a shadow effect for elevation.
+        It includes flexbox for horizontal alignment and space distribution of items.
+        Animations provide smooth entry when loaded.
+        Responsive Features:
+        For smaller screens, hamburger menu is displayed while the other navigation items are hidden.
+ -->
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="nav_container">
+                <div class="logo_container">
+                    <!-- <img src="./assets/Screenshot 2024-11-13 at 6.55.53 PM.png" alt="logo" class="logo"> -->
+                  Only <pre class="code">Code&lt;/&gt;</pre>
+                </div>
+                <div class="nav_item_container">
+                    <ul class="nav_item">
+                        <li><a class="nav_li" href="#home">Home</a></li>
+                        <li><a class="nav_li" href="#about">About</a></li>
+                        <li><a class="nav_li" href="#project">Projects</a></li>
+                        <li><a class="nav_li" href="#skill">Skills</a></li>
+                        <li><a class="nav_li" href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="hamburger_menu"><img src="./assets/hamburger-svgrepo-com.svg" alt="hamberger" class="hamberger">
+                        <div class="hamberger_menu_list">
+                         <ul class="hamberger_menu_list_ul">
+                            <a href="#home">
+                                <li>Home</li>
+                            </a><a href="#about">
+                                <li>About</li>
+                            </a><a href="#project">
+                                <li>Project</li>
+                            </a><a href="#skill">
+                                <li>Skill</li>
+                            </a><a href="#contact">
+                                <li>Contact</li>
+                            </a>
+                         </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar end -->
+    </header>
+    <!-- Intro_div_container -->
+    <!-- Intro Section
+    Layout:
+    Two-column design featuring an image and descriptive text.
+    Use of animations (slideRightForm, slideLeftForm) for dynamic user engagement.
+    Buttons:
+    "Hire Me" button with vibrant neon shadow and hover effects, enhancing the call-to-action's visibility.
+     -->
+    <div class="intro_div_container" id="home">
+
+    <div class="intro_div">
+        <div class="intro_left_div">
+            <div class="intro_text_div">
+                <div class="greetings">Hello</div>
+                <div class="intro">This is <span class="name">Yogesh Baviskar</span></div>
+                <div class="work_div">I am the <span class="work">Full Stack</span> Developer</div>
+            </div>
+                <div class="technology_div_container">
+                <div class="technology_div"> 
+                <div class="tech_image_div">
+                    <img src="./assets/html-5-svgrepo-com.svg" alt="html" class="html_logo tech_logo">
+                </div>
+                </div>
+                <div class="technology_div"> 
+                    <div class="tech_image_div">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="css" class="css_logo tech_logo">
+                    </div>
+                </div>
+                <div class="technology_div"> 
+                    <div class="tech_image_div">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="javascript" class="java_script_logo tech_logo">
+                    </div>
+    
+                </div>
+                <div class="technology_div"> 
+                    <div class="tech_image_div">
+                        <img src="./assets/react-svgrepo-com.svg" alt="react" class="react_logo tech_logo">
+                    </div>
+                </div>
+                <div class="technology_div"> 
+                    <div class="tech_image_div">
+                        <img src="./assets/nodejs-logo-svgrepo-com.svg" alt="node" class="node_js_logo tech_logo">
+                    </div>
+                </div>
+                <div class="technology_div"> 
+                    <div class="tech_image_div">
+                        <img src="./assets/mongodb-logo-svgrepo-com.svg" alt="mongo" class="mongo_logo tech_logo">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="technology_div_button">
+                <a href="#contact"><button class="hire_me">Hire Me</button></a> 
+                
+            </div>
+        </div>
+        <div class="intro_right_div">
+            <img src="./assets/webdev.jpg" alt="Intro_image" class="intro_image">
+        </div>
+ 
+    </div>
+    </div>
+    <!-- End Intro_div_container -->
+    <!-- 
+        About Me Section
+            Highlights:
+            Flexbox-based two-column design with a circular image on one side.
+            High contrast (black background, white text) for focus.
+            Responsiveness adjusts the columns into rows on smaller screens.
+            Typography:
+            Important text such as "Me" and "Developer" are highlighted with accent colors.
+
+     -->
+
+    <!-- About_me_container -->
+    
+    <div class="about_me_container" id="about">
+        <div class="about_me_div">
+            <div class="about_left_div">
+                <img src="./assets/Yogesh_crop.jpeg" alt="mypic" class="about_image">
+            </div>
+            <div class="about_right_div">
+                <div class="about_title_div">About<span class="me"> Me</span></div>
+                <div class="about_work_div">Full stack<span class="Developer"> Developer</span></div>
+                <div class="about_para">
+                    <p>
+                        I am a passionate Full Stack Developer with a strong foundation in building dynamic, user-centric web applications. With expertise in both front-end and back-end technologies, I specialize in creating seamless digital experiences that are efficient, scalable, and visually engaging. My skill set spans frameworks like React, Angular, and Node.js, along with proficiency in database management using MongoDB and SQL. Whether designing responsive interfaces or architecting robust APIs, I thrive on solving complex problems and bringing ideas to life through code. Beyond development, I am committed to continuous learning and staying updated with the latest technologies to deliver innovative solutions that meet and exceed client expectations.
+                    </p>
+                </div>
+                <a href="#experiance"><input type="button" class="Experiance_button" value="Experiance"></a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End About_me_Container -->
+    <!-- Experiance_div_container -->
+    <!-- Experience Section
+        Structure:
+        Grid layout with four cards, each representing a skill or experience.
+        Each card has a hover effect with elevation for interactivity.
+        Styling:
+        Each card uses unique background colors to differentiate content visually.
+        Responsive Design:
+        Adapts from 2-column to 1-column layout on small screens.
+         -->
+    <div class="experiance_div_container" id="experiance">
+        <h1 class="experiance_div_title">EXPERIANCE</h1>
+        <p class="experiance_div_desc">Crafting solutions, one milestone at a time.</p>
+      <div class="experiance_div">
+                
+        <div class="experiance_div1">
+            <img class="experiance_div_logo" src="./assets/frontend.jpg" alt="experiance_image">
+            <h3 class="job-title">Frontend Developer</h3>
+                    <p class="company-name">Gooogle</p>
+                    <p class="job-duration">Jan 2023 - Present</p>
+                    <p class="job-description">
+                        Worked on developing responsive web applications using React.js and improving website performance, resulting in a 30% faster load time.
+                    </p>
+         </div>
+         <div class="experiance_div2">
+            <img class="experiance_div_logo" src="./assets/frontend.jpg" alt="experiance_image">
+            <h3 class="job-title">Web Developer Intern</h3>
+            <p class="company-name">Infosys</p>
+            <p class="job-duration">Jun 2022 - Dec 2022</p>
+            <p class="job-description">
+                Designed and implemented features for a company dashboard using HTML, CSS, and JavaScript.
+            </p>
+         </div>
+         <div class="experiance_div3">
+            <img class="experiance_div_logo" src="./assets/frontend.jpg" alt="experiance_image">
+            <h3 class="job-title">Software Engineer</h3>
+            <p class="company-name">Tata Consultancy</p>
+            <p class="job-duration">Jul 2021 - May 2022</p>
+            <p class="job-description">
+                Contributed to backend development using Node.js and database management with MongoDB, enhancing data retrieval efficiency by 40%.
+            </p>
+         </div>
+         <div class="experiance_div4">
+            <img class="experiance_div_logo" src="./assets/frontend.jpg" alt="experiance_image">
+            <h3 class="job-title">Freelance Web Designer</h3>
+            <p class="company-name">Self-Employed</p>
+            <p class="job-duration">Jan 2020 - Jun 2021</p>
+            <p class="job-description">
+                Created visually appealing and user-friendly websites for small businesses, focusing on modern design trends and responsive layouts.
+            </p>
+         </div>
+        </div>
+    </div>
+     <!-- Experiance_div_container End -->
+     <!-- Find_me_container -->
+     <!-- 
+        Find Me Section
+            Highlights:
+            Centralized container with circular profile image and social media icons.
+            Shadows and animations enhance visual hierarchy.
+            Social Media Icons:
+            Circular hover effect with inner shadow animation for depth.
+            Responsive Adjustments:
+            Flexbox ensures a wrapped layout for social icons on smaller screens.
+
+      -->
+    <div class="find_me_container">
+        <div class="find_me_div">
+            <div class="find_me_logo">
+                <img src="./assets/Yogesh_crop.jpeg" alt="find_me" class="find_me_image">
+            </div>
+            <div class="find_me_name_div">
+                <h1 class="find_me_heading">Yogesh Baviskar</h1>
+                <h3 class="find_me_desc">Full stack Developer / UIUX designer</h3>
+            </div>
+            <div class="social_media_container">
+                <a href="https://www.instagram.com/i_am_anonymous_777/profilecard/?igsh=amRsbHk5OTRueDBq" target="_blank">
+                <div class="insta_div social_div">
+                    <img src="./assets/instagram-social-media-network-communication-interaction-connection-svgrepo-com.svg" alt="insta" class="insta_image social_image">
+                </div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100041696181135" target="_blank">
+                <div class="facebook_div social_div">
+                    <img src="./assets/facebook-svgrepo-com.svg" alt="facebook" class="facebook_image social_image">
+                </div>
+                 </a>
+                 <a href="https://x.com/home" target="_blank">
+                <div class="twitter_div social_div">
+                    <img src="./assets/twitter-svgrepo-com.svg" alt="facebook" class="twitter_image social_image">
+                </div>
+                </a>
+                <a href="https://discord.com/channels/@me" target="_blank">
+                <div class="discord_div social_div">
+                    <img src="./assets/discord-v2-svgrepo-com.svg" alt="discord" class="discord_image social_image">
+                </div>
+                </a>
+                <a href="https://whatsapp.com" target="_blank">
+                <div class="whats_app_div social_div">
+                    <img src="./assets/whatsapp-svgrepo-com.svg" alt="whatsapp" class="whatsapp_image social_image">
+                </div>
+                </a>
+                <a href="https://github.com/IAmAnonymouse777/Sandip_E_Manager" target="_blank">
+                <div class="whats_app_div social_div">
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="github" class="github_image social_image">
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Find_me_container End-->
+    <!-- Project_container -->
+    <!-- 
+        Projects Section
+        Grid Layout:
+        Projects displayed in a 2x2 grid, adaptable to single-column on smaller screens.
+        Each project card includes a logo, title, and description.
+        Styling:
+        Dark theme with colorful shadows differentiates this section from others.
+        Hover effects provide tactile feedback for interactivity.
+
+     -->
+    <div class="project_container" id="project">
+        <div class="project_main_heading_div_container">
+            <div class="projet_main_heading_div">
+                <h1 class="project_main_heading">PROJECT</h1>
+                <p class="project_main_desc">here is my some projects I've Work On</p>
+            </div>
+        </div>
+        <div class="project_div">
+            <div class="project_card">
+                <div class="project_logo_div">
+                    <img src="./assets/Food_delivery.jpg" alt="project_logo" class="project_logo_image">
+                </div>
+                <div class="project_title_div">
+                    <h1 class="project_heading">Zomato Clone </h1>
+                    <p class="project_desc">Fully functional Zomato clone which is food delivery website understanding the flow of the website</p>
+                </div>
+                <div class="temp"> Tech Use </div>
+                <div class="tech_use_div_container">
+                   
+                    <div class="tech_use_div">
+                        <img src="./assets/html-5-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/react-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/nodejs-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/mongodb-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    
+                </div>
+                <div class="project_card_button">
+                     <a href="https://github.com/IAmAnonymouse777/Java-Programming" target="_blank"><button class="view_project">View Project</button></a>
+                    <a href="https://github.com/IAmAnonymouse777/Java-Programming"  target="_blank"><button class="github_repo">Github Repo</button></a>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="project_logo_div">
+                    <img src="./assets/20944161.jpg" alt="project_logo" class="project_logo_image">
+                </div>
+                <div class="project_title_div">
+                    <h1 class="project_heading">Collage Emanager App</h1>
+                    <p class="project_desc">It is fully automated emanager app that will used to managest the event in collage </p>
+                </div>
+                <div class="temp"> Tech Use </div>
+                <div class="tech_use_div_container">
+                   
+                    <div class="tech_use_div">
+                        <img src="./assets/html-5-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/react-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/nodejs-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/mongodb-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    
+                </div>
+                <div class="project_card_button">
+                <a href="https://github.com/IAmAnonymouse777/Java-Programming"   target="_blank"><button class="view_project">View Project</button></a>
+                  <a href="https://github.com/IAmAnonymouse777/Java-Programming" target="_blank"> <button class="github_repo">Github Repo</button></a> 
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="project_logo_div">
+                    <img src="./assets/CinemaTicket.jpg" alt="project_logo" class="project_logo_image">
+                </div>
+                <div class="project_title_div">
+                    <h1 class="project_heading">BookMyShow</h1>
+                    <p class="project_desc">Clone of the BookMyShow website which is movie ticket booking site after creating this clone I understand the how booking system works </p>
+                </div>
+                <div class="temp"> Tech Use </div>
+                <div class="tech_use_div_container">
+                   
+                    <div class="tech_use_div">
+                        <img src="./assets/html-5-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/react-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/nodejs-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/mongodb-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    
+                </div>
+                <div class="project_card_button">
+                    <a href="https://github.com/IAmAnonymouse777/Java-Programming" target="_blank" ><button class="view_project">View Project</button></a>
+                    <a href="https://github.com/IAmAnonymouse777/Java-Programming" target="_blank" ><button class="github_repo">Github Repo</button></a>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="project_logo_div">
+                    <img src="./assets/Library_management.jpg" alt="project_logo" class="project_logo_image">
+                </div>
+                <div class="project_title_div">
+                    <h1 class="project_heading">Library management system</h1>
+                    <p class="project_desc">Fully functional Library management app which allowcate and deallocate the book for student in univercity</p>
+                </div>
+                <div class="temp"> Tech Use </div>
+                <div class="tech_use_div_container">
+                   
+                    <div class="tech_use_div">
+                        <img src="./assets/html-5-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/css-3-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/react-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/nodejs-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    <div class="tech_use_div">
+                        <img src="./assets/mongodb-logo-svgrepo-com.svg" alt="html" class="tech_use_image">
+                    </div>
+                    
+                </div>
+                <div class="project_card_button">
+                    <a href="https://github.com/IAmAnonymouse777/Java-Programming" target="_blank" ><button class="view_project">View Project</button></a>
+                    <a href="https://github.com/IAmAnonymouse777/Java-Programming" target="_blank" ><button class="github_repo">Github Repo</button></a>
+                </div>
+            </div>
+
+         
+           
+        </div>
+    </div>
+        <!-- Project_container End -->
+        <!-- Skill_container -->
+        <!-- Skill Section 
+            The Skills Section in the CSS file is styled to emphasize the user's professional abilities in a clean and visually appealing way. Here's a detailed breakdown of its design and functionality:
+            Section Container:
+
+        Uses a flex layout to center the content both vertically and horizontally.
+        Padding ensures the section has enough space around it to avoid clutter.
+        Heading:
+
+        The heading "Skills" is large and bold to immediately capture the user's attention.
+        Subtle accent colors may be applied to underline the importance of the section.
+        Skill Cards:
+        Each skill is displayed in an individual card with the following features:
+
+        Background: Each card has a dark background to align with the website's overall theme.
+        Box Shadow: Adds a slight elevation effect, making the cards appear clickable and modern.
+        Hover Effect:
+        Cards scale slightly on hover, giving them a tactile, interactive feel.
+        Box shadow intensifies on hover, enhancing the focus on the hovered card.
+        -->
+    <div class="skill_container" id="skill">
+        <div class="skill_div">
+            <div class="skill_card">
+                <div class="skill_heading_div">
+                    <h1 class="skill_heading">Programming Languages</h1>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">javascript</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/javascript-svgrepo-com.svg" alt="java_script_logo" class="skill_javascript language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">java</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/java-svgrepo-com.svg" alt="java_script_logo" class="skill_java language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">c++</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/cpp-svgrepo-com.svg" alt="java_script_logo" class="skill_cpp language language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Python</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/python-svgrepo-com.svg " alt="java_script_logo" class="skill_python language">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="skill_card">
+                <div class="skill_heading_div">
+                    <h1 class="skill_heading">Frame works & Libraries</h1>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Angular</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/angular-svgrepo-com.svg" alt="java_script_logo" class="skill_Angular language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">React</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/react-svgrepo-com.svg" alt="java_script_logo" class="skill_react language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Django</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/django-icon-svgrepo-com.svg" alt="java_script_logo" class="skill_django language language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">NodeJs</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/nodejs-logo-svgrepo-com.svg" alt="java_script_logo" class="skill_python language">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="skill_card">
+                <div class="skill_heading_div">
+                    <h1 class="skill_heading">Database Management</h1>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">MongoDB</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/mongodb-logo-svgrepo-com.svg" alt="java_script_logo" class="skill_javascript language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">SQL</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/sql-database-generic-svgrepo-com.svg" alt="java_script_logo" class="skill_java language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">PostgreSQL</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/postgresql-logo-svgrepo-com.svg" alt="java_script_logo" class="skill_cpp language language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">MySQL</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/mysql-svgrepo-com.svg " alt="java_script_logo" class="skill_python language">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="skill_card">
+                <div class="skill_heading_div">
+                    <h1 class="skill_heading">Version Control & Deployment</h1>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Git</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/git-merge-svgrepo-com.svg" alt="java_script_logo" class="skill_javascript language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">GitHub</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/github-142-svgrepo-com.svg" alt="java_script_logo" class="skill_java language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Docker</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/docker-svgrepo-com.svg" alt="java_script_logo" class="skill_cpp language language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Netlify</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/netlify-svgrepo-com.svg" alt="java_script_logo" class="skill_python language">
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="skill_card">
+                <div class="skill_heading_div">
+                    <h1 class="skill_heading">Tools & Platform </h1>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">VS Code</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/vs-code-svgrepo-com.svg" alt="java_script_logo" class="skill_javascript language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Post Man</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/postman-icon-svgrepo-com.svg" alt="java_script_logo" class="skill_java language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Figma</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/figma-svgrepo-com.svg" alt="java_script_logo" class="skill_cpp language language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">VS Studio</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/visual-studio-svgrepo-com.svg " alt="java_script_logo" class="skill_python language">
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="skill_card">
+                <div class="skill_heading_div">
+                    <h1 class="skill_heading">Soft Skills</h1>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Problem Solving </h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/brainstorming-svgrepo-com.svg" alt="java_script_logo" class="skill_javascript language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Communication</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/communication-5-svgrepo-com.svg" alt="java_script_logo" class="skill_java language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Team Collaboration</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/team-teamwork-users-svgrepo-com.svg" alt="java_script_logo" class="skill_cpp language language">
+                    </div>
+                </div>
+                <div class="skill_tools">
+                    <h1 class="skill_tools_heading">Good Communication</h1>
+                    <div class="skill_tools_image_div">
+                        <img src="./assets/brainstorming-svgrepo-com.svg" alt="java_script_logo" class="skill_python language">
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- End Skill Container -->
+    <!-- Start Footer -->
+    <footer>
+        <!-- Contact_form_div_container -->
+        <!-- contact Section :- this contact form provide the way to communicate with me If any suggetion they will contact me using this form
+            1. Section Layout
+            Container:
+
+            A flexbox or grid layout is used to center the content and maintain balance.
+            Adequate padding and margin ensure the section feels spacious and not cramped.
+            Background:
+
+            A contrasting background color (or an image/gradient) is used to make the section stand out from the rest of the page.
+            Subtle patterns or overlays may be added to enhance visual appeal.
+            2. Heading
+            Typography:
+
+            Large, bold fonts for the "Contact Me" heading to draw attention.
+            A secondary accent color might underline or highlight the heading.
+        -->
+        <div class="contact_form_div_container" id="contact">
+            <div class="contact_form_div">
+                <div class="contact_form_hero_section">
+                    <div class="contact_form_title_section">
+                        <h1 class="contact_form_title">Get In touch</h1>
+                        <p class="contact_form_desc">I am Open for any suggetion or just to have a chat </p>
+                    </div>
+                    <div class="contact_form_hero_image_section">
+                        <img src="./assets/contact.jpg" alt="contact_image" class="contact_form_hero_image">
+                    </div>
+                    <div class="contact_form_location_div_container">
+                        <div class="contact_form_location_div">
+                            <div class="contact_form_location_image_div">
+                                <img src="./assets/location-svgrepo-com.svg" alt="location" class="contact_form_location_image">
+                            </div>
+                            <div class="contact_form_location">
+                                <div class="location">Aashirwad nagar, Nashik 422010</div>
+                            </div>
+                        </div>
+                        <div class="contact_form_location_div">
+                            <div class="contact_form_location_image_div">
+                                <img src="./assets/call-192-svgrepo-com.svg" alt="location" class="contact_form_location_image">
+                            </div>
+                            <div class="contact_form_location">
+                                <div class="location">+91 7058617791</div>
+                            </div>
+                        </div>
+                        <div class="contact_form_location_div">
+                            <div class="contact_form_location_image_div">
+                                <img src="./assets/website-ui-web-svgrepo-com.svg" alt="location" class="contact_form_location_image">
+                            </div>
+                            <div class="contact_form_location">
+                                <div class="location">https://github.com</div>
+                            </div>
+                        </div>
+                        <div class="contact_form_location_div">
+                            <div class="contact_form_location_image_div">
+                                <img src="./assets/mail-svgrepo-com.svg" alt="location" class="contact_form_location_image">
+                            </div>
+                            <div class="contact_form_location">
+                                <div class="location">yogeshbaviskar0603@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conatact_details_div">
+                    <div class="contact_details_title_div">
+                        <h1>Get In Touch</h1>
+                        <p>Reach Out and we'll get in touch within 24 Hours</p>
+                    </div>
+                    <form action="" target="_blank" class="form">
+                    <div class="input_fields">
+                       
+                        <input type="text" placeholder="Your Name" class="Your_name" required>
+                        <input type="email" placeholder="Your Email" class="Your_Email" required>
+                        <input type="number" placeholder="Your_Phone" class="Your_phone" required>
+                            <textarea placeholder="Type Some Message....." name="msg" rows="4" cols="50" class="message" required ></textarea>
+                    </div>
+                    <div class="contact_details_button_div">
+                        <button  class="send_msg" >Send Message</button>
+                    </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Contact_form_div_container -->
+        <!-- footer_container -->
+        <div class="footer-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <h4>Contact Me</h4>
+              <p>Email: <a class="footer-anchor" href="mailto:yourname@example.com">yogeshbaviskar0603@gmail.com</a></p>
+              <p>Location: Nashik, India</p>
+            </div>
+      
+            <!-- Social Media Links -->
+            <div class="social-links">
+              <h4>Follow Me</h4>
+              <a class="footer-anchor" href="https://www.instagram.com/i_am_anonymous_777/profilecard/?igsh=amRsbHk5OTRueDBq" target="_blank">Instagram</a>
+              <a class="footer-anchor" href="https://github.com/IAmAnonymouse777/Sandip_E_Manager" target="_blank">GitHub</a>
+              <a class="footer-anchor" href="https://x.com/home" target="_blank">Twitter</a>
+            </div>
+      
+            <!-- Navigation Links -->
+            <div class="nav-links">
+              <h4>Quick Links</h4>
+              <a class="footer-anchor" href="#about">About</a>
+              <a class="footer-anchor" href="#project">Projects</a>
+              <a class="footer-anchor" href="#contact">Contact</a>
+            </div>
+          </div>
+          <!-- footer_container End -->
+      
+          <!-- Back to Top -->
+          <a class="footer-anchor" href="#top" class="back-to-top">Back to Top ↑</a>
+          <!-- Back to Top End -->
+      
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <p>© Yogesh Baviskar 2024. All Rights Reserved.</p>
+          </div>
+          <!-- Copyright -->
+    </footer>
+    <!-- Footer_end -->
+</body>
+<!-- Body End -->
+</html>
+<!-- HTML End -->
+
+
+<!-- Animations
+Includes smooth keyframes such as:
+slideTop: Elements slide in from the top.
+slideLeftForm & slideRightForm: Horizontal sliding animations for forms.
+appear: Subtle scaling effect for a polished entrance.
+ -->
