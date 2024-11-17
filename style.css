@@ -58,7 +58,88 @@ body
         transform: translateX(0%);
     }
 }
+@keyframes moveUpAnimation {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  @keyframes moveLeftAnimation {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes moveRightAnimation {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX( 10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
 
+  @keyframes boxColor {
+    0% {
+        box-shadow:-5px -5px 10px rgb(183, 81, 183) ,  6px 6px 10px rgb(231, 253, 160);
+      }
+      50% {
+        box-shadow:   -5px -5px 10px  rgb(255, 166, 2) ,  5px 5px 10px rgb(47, 47, 47) ;
+      }
+      100% {
+        box-shadow:-5px -5px 10px rgb(183, 81, 183) ,  6px 6px 10px rgb(231, 253, 160);
+      }
+  }
+  @keyframes boxBorder {
+    0% {
+        border-color: #01ffe1;
+      }
+      30% {
+        border-color: #2ae411;
+      }
+      50% {
+        border-color: #4a90e2;
+      }
+      70% {
+        border-color: #db00fc;
+      }
+      100% {
+            border-color: #162eb3;
+      }
+  }
+  @keyframes boxColor2 {
+    0% {
+        box-shadow: -4px -4px 0px rgba(250, 4, 4, 0.993), 4px 4px 0px rgb(255, 137, 3);
+      }
+      10%{
+        box-shadow: -4px -4px 0px rgba(78, 250, 4, 0.993), 4px 4px 0px rgb(58, 0, 232);
+      }
+      20%{
+        box-shadow: -4px -4px 0px rgba(127, 238, 244, 0.993), 4px 4px 0px rgb(52, 62, 63);
+      }
+      30%{
+        box-shadow: -4px -4px 0px rgba(214, 8, 183, 0.993), 4px 4px 0px rgb(219, 25, 230);
+      }
+      50% {
+        box-shadow: -4px -4px 0px rgba(232, 190, 65, 0.993), 4px 4px 0px rgb(255, 46, 5);
+      }
+      100% {
+        box-shadow:-5px -5px 0px rgb(183, 81, 183) ,  6px 6px 0px rgb(231, 253, 160);
+      }
+  }
     
 .logo_container
 {
@@ -206,6 +287,7 @@ body
     /* border: 1px solid rgb(172, 172, 172); */
     background-color: rgb(58, 224, 242);
     border: none;
+    animation: boxColor 6s infinite;
 }
 .hire_me:hover
 {
@@ -262,7 +344,7 @@ body
     box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
     border: 2px solid rgb(206, 206, 206);
     border-radius: 1rem;
-    animation: slideRightForm  1s linear;
+   animation: moveUpAnimation 4s infinite alternate;
 }
 .intro_image
 {
@@ -369,7 +451,8 @@ body
     align-items: center;
     height:100vh;
     border-radius:50%;
-    animation: slideLeftForm  1s linear;
+    /* animation: slideLeftForm  1s linear; */
+    animation: moveLeftAnimation 6s infinite alternate;
   }
   .about_image
   {
@@ -387,7 +470,8 @@ body
     justify-content: center;
     gap: 2rem;
 
-    animation: slideLeftForm 1s linear;
+    /* animation: slideLeftForm 1s linear; */
+    animation: moveRightAnimation 6s infinite alternate;
   }
   .about_title_div
   {
@@ -419,6 +503,7 @@ body
     transition-duration: .2s;
     border: none;
     color: white;
+    animation: boxColor 6s infinite alternate;
 }
 .Experiance_button:hover
 {
@@ -448,7 +533,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slideLeftForm 1s linear
+    /* animation: slideLeftForm 1s linear */
   }
 }
 
@@ -526,7 +611,8 @@ body
     background-color: #FF6289;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: slideLeftForm  1s linear;
+    /* animation: slideLeftForm  1s linear; */
+    animation: moveLeftAnimation 6s infinite alternate;
 }
 .experiance_div2
 {
@@ -541,7 +627,8 @@ body
     background-color: #4a90e2;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: slideRightForm  1s linear;
+    /* animation: slideRightForm  1s linear; */
+    animation: moveRightAnimation 6s infinite alternate;
 }
 
 .experiance_div3
@@ -557,7 +644,8 @@ body
     background-color: #fcbf58;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: slideLeftForm  1.2s linear;
+    /* animation: slideLeftForm  1.2s linear; */
+    animation: moveLeftAnimation 6s infinite alternate;
 }
 
 .experiance_div4
@@ -574,6 +662,7 @@ body
     margin-left: 1rem;
     margin-right: 1rem;
     animation: slideRightForm  1.2s linear;
+    animation: moveRightAnimation 6s infinite alternate;
 }
 .experiance_div_logo
 {
@@ -634,7 +723,8 @@ body
     display: flex;
     justify-content: center;
     align-items:center;
-    animation: slideLeftForm  1.2s linear;
+    /* animation: slideLeftForm  1.2s linear; */
+    animation: moveLeftAnimation 6s infinite alternate;
 }
 .find_me_image
 {
@@ -651,8 +741,10 @@ body
     gap: 1rem;
     text-align: center;
     margin: 1rem;
-    animation: slideRightForm  1.2s linear;
+    /* animation: slideRightForm  1.2s linear; */
+    animation: moveRightAnimation 6s infinite alternate;
 }
+
 .find_me_desc
 {
     color: #777878;
@@ -667,7 +759,8 @@ body
     border-radius: .5rem;
     flex-wrap: wrap;
     box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6), 7px 7px 17px rgba(70, 70,70, 0.12);
-    animation: slideLeftForm  1.2s linear;
+    /* animation: slideLeftForm  1.2s linear; */
+    animation: moveLeftAnimation 6s infinite alternate;
 }
 @media (max-width:429px) {
     .social_media_container
@@ -688,7 +781,7 @@ body
     transition:box-shadow;
     transition-timing-function: linear;
     transition-duration: 2s;
-
+   
 
     box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6), 7px 7px 17px rgba(70, 70,70, 0.12);
 }
@@ -753,6 +846,7 @@ body
     align-content: center;
     border-radius:5rem;
     background-color: black;
+    
 }
 
 .project_card
@@ -766,7 +860,8 @@ body
     padding-bottom: 2rem;
     border-radius:.5rem;
     box-shadow: -2px -2px 10px rgba(197, 26, 26, 0.6), 2px 2px 10px blue;
-    animation: appear  1.2s linear;
+    /* animation: appear  1.2s linear; */
+    animation: boxColor 6s infinite alternate;
     /* box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6), 7px 7px 17px rgba(70, 70,70, 0.12); */
 }
 .project_logo_div
@@ -861,6 +956,7 @@ body
     transition-property:all;
     transition-duration: .4s;
     transition-timing-function:ease-out;
+    animation: boxColor 6s infinite alternate;
 }
 .view_project:hover
 {
@@ -879,6 +975,7 @@ body
     transition-property: all;
     transition-duration: .4s;
     transition-timing-function: ease-in;
+    animation: boxColor 6s infinite alternate;
 }
 .github_repo:hover
 {
@@ -1054,7 +1151,7 @@ body
 .contact_form_hero_image_section
 {
     display: flex;
-    
+    animation: moveUpAnimation 8s infinite alternate;
 
 }
 .contact_form_hero_image
@@ -1102,6 +1199,7 @@ body
     border: none;
     box-shadow: -4px -4px 0px rgba(250, 4, 4, 0.993), 4px 4px 0px rgb(255, 137, 3);
     border-radius: .4rem;
+    animation: boxColor2 6s infinite;
 }
 .form
 {
@@ -1118,6 +1216,7 @@ body
     border: none;
     box-shadow: -4px -4px 0px rgba(15, 15, 15, 0.993), 4px 4px 0px rgb(158, 158, 158);
     border-radius: .4rem;
+    animation: boxColor2 6s infinite alternate;
 }
 .Your_phone
 {
@@ -1127,6 +1226,7 @@ body
     border: none;
     box-shadow: -4px -4px 0px rgba(119, 251, 3, 0.993), 4px 4px 0px rgb(137, 3, 255);
     border-radius: .4rem;
+    animation: boxColor2 6s infinite alternate;
 }
 .message
 {
@@ -1137,6 +1237,7 @@ body
     box-shadow: -4px -4px 0px rgba(250, 4, 4, 0.993), 4px 4px 0px rgb(255, 137, 3);
     border-radius: .4rem;
     color: black;
+    animation: boxColor2 6s infinite alternate;
 }
 .send_msg
 {
@@ -1248,6 +1349,7 @@ footer {
      transition-property:all;
      transition-duration: .2s;
      transition-timing-function: linear;
+     animation: moveUpAnimation 4s infinite;
   }
   .tech_image_div:hover
   {
